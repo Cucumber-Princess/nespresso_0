@@ -1,0 +1,215 @@
+@media (min-width: 1200px)  {
+    .m{display: none;}
+    .tab{display: none;}
+    .pc{display: block;}
+
+    header .wrap{
+        width: 100%;
+        height: 150px;
+        background-color: unset;
+        justify-content: none;
+        color: white;
+        display: flex;
+        position: relative;
+        padding: unset;
+    }
+
+    header .wrap h1{
+        position: absolute;
+        top: 30px;
+        right: 50%;
+        transform: translate(50%, 0);
+    }
+    header .wrap h1 img{height: 50px;}
+    header .wrap .btn-opn{order: unset; display: none;}
+    header .wrap nav{
+        position: unset;
+        background-color: unset;
+        width: 100%;
+        height: unset;
+        display: unset;
+        flex-direction: unset;
+    }
+    header .wrap nav .top{display: none;}
+    header .wrap nav .search{display: none; border: none;} /* 잠시 대기 */
+    header .wrap nav .menu{
+        order: unset;
+        display: flex;
+        flex-direction: unset;
+        font-size: 16px;
+        justify-content: center;
+        margin-top: 100px;
+        position: relative;
+        overflow-y: unset;
+    }
+    header .wrap nav .menu li{
+        order: unset;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+       
+    }
+    header .wrap nav .menu li .btn button{
+        width: 100%;
+        text-align: center;
+        border-bottom: unset;
+        color: white;
+        padding: 10px 40px;
+        background-image: unset;
+        font-size: 15px;
+    }
+    header .wrap nav .menu li .btn button.on{color: unset;}
+    header .wrap nav .menu li .box{
+        display: none;
+        position: absolute;
+        z-index: 1;
+        top: 40px;
+        text-align: center;
+    }
+    header .wrap nav .menu li .box .con a{
+        display: block;
+        width: unset;
+        padding: 10px;
+        color: white;
+        background-color: unset;
+        border-bottom: unset;
+        text-align: center;
+    }
+    header .wrap nav .menu li:nth-child(4){
+        order: unset;
+    }
+    header .wrap nav .menu li:nth-child(4) .btn button{
+        color: white;
+        background-color: unset;
+        background-image: unset;
+    }
+    header .wrap nav .menu li:nth-child(4) .box .con a{
+        background-color: unset;
+        border-bottom: unset;
+    }
+
+    header .wrap nav .gnb{
+        order: unset;
+        display: flex;
+        position: absolute;
+        top: 100px;
+        right: 30px;
+        gap: 10px;
+        justify-content: unset;
+        padding: unset;
+    }
+    header .wrap nav .gnb .src_btn a img{width: 40px;}
+    header .wrap nav .gnb .src{
+        display: flex;
+        position: fixed;
+        top: -100%;
+        left: 0;
+        background-color: white;
+        width: 100%;
+        height: 150px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    header .wrap nav .gnb .src .logo{
+        height: 110px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header .wrap nav .gnb .src .logo img{height: 50px;}
+    header .wrap nav .gnb .src .search{
+        display: flex;
+        border-top: 1px solid #ccc;
+        padding: 5px 10px;
+        margin: 0;
+    }
+    header .wrap nav .gnb .busin{display: flex; justify-content: center;}
+    header .wrap nav .gnb .busin:hover .box{display: block;}
+    header .wrap nav .gnb .busin img{width: 40px;}
+    header .wrap nav .gnb .busin .box{
+        display: none;
+        position: absolute;
+        z-index: 1;
+        top: 40px;
+        background-color: #ffffff90;
+        border-radius: 5px;
+        padding: 10px 10px !important; 
+        height: auto !important;
+        color: #2e2e2e;
+        text-align: center;
+    }
+    header .wrap nav .gnb .busin .box .con a{
+        display: block;
+        padding-bottom: 10px;
+    }
+    header .wrap nav .gnb .busin .box .con:last-child a{
+        padding-bottom: 0;
+    }
+    header .wrap nav .gnb .call{display: flex; justify-content: center;}
+    header .wrap nav .gnb .call:hover .box{display: block;}
+    header .wrap nav .gnb .call img{width: 40px;}
+    header .wrap nav .gnb .call .box{
+        display: none;
+        position: absolute;
+        z-index: 1;
+        top: 40px;
+        background-color: #ffffff90;
+        border-radius: 5px;
+        padding: 10px 10px !important; 
+        height: auto !important;
+        color: #2e2e2e;
+        text-align: center;
+    }
+    header .wrap nav .gnb .call .box .con a{
+        display: block;
+        padding-bottom: 10px;
+    }
+    header .wrap nav .gnb .call .box .con:last-child a{
+        padding-bottom: 0;
+    }
+    header .wrap nav .gnb .me{display: flex; justify-content: center;}
+    header .wrap nav .gnb .me:hover .box{display: block;}
+    header .wrap nav .gnb .me img{width: 40px;}
+    header .wrap nav .gnb .me .box{
+        display: none;
+        position: absolute;
+        z-index: 1;
+        top: 40px;
+        background-color: #ffffff90;
+        border-radius: 5px;
+        padding: 10px 10px !important; 
+        height: auto !important;
+        color: #2e2e2e;
+        text-align: center;
+        white-space:nowrap;
+    }
+    header .wrap nav .gnb .me .box .con a{
+        display: block;
+        padding-bottom: 10px;
+    }
+    header .wrap nav .gnb .me .box .con:last-child a{
+        padding-bottom: 0;
+    }
+    header .wrap nav .gnb .basket img{width: 40px;}
+
+    .machine .wrap .select .o .machine_o .swiper-wrapper{gap: 100px; display: flex; justify-content: center;}
+    .machine .wrap .select .v .machine_v .swiper-wrapper{gap: 100px; display: flex; justify-content: center;}
+
+    .service .wrap{width: 80%;}
+
+    .sub_footer .wrap .bottom{display: flex; flex-direction: unset; gap: unset; padding: 20px 0; width: 100%; justify-content: space-between;}
+    .sub_footer .wrap .bottom .con{display: flex; flex-direction: column; justify-content: space-between;}
+    .sub_footer .wrap .bottom .con:first-child{width: 300px; margin-right: 50px; white-space: nowrap;}
+    .sub_footer .wrap .bottom .con:nth-child(2){display: flex; flex-direction: unset; justify-content: space-between; width: 100%; gap: 30px}
+    .sub_footer .wrap .bottom .con .box .card{margin-top: 20px;}
+    .sub_footer .wrap .bottom .con .box h5{font-size: 20px;}
+    .sub_footer .wrap .bottom .con .box p{font-size: 18px; font-weight: lighter; margin-top: 5px; color: #6a6a6a; margin-top: 20px;}
+    .sub_footer .wrap .bottom .con .box ul{margin-top: 20px;}
+    .sub_footer .wrap .bottom .con .box ul li{font-size: 18px; font-weight: lighter; margin-top: 5px; color: #6a6a6a;}
+    .sub_footer .wrap .bottom .con .box ul li:hover a{border-bottom: 1px solid #6a6a6a;}
+    .sub_footer .wrap .bottom .con .ask{width: 200px;} 
+    .sub_footer .wrap .bottom .con .ask .all{display: flex; flex-direction: column;}
+    .sub_footer .wrap .bottom .con .box .all div{font-size: 17px; font-weight: lighter; margin-top: 20px; color: #6a6a6a;}
+    .sub_footer .wrap .bottom .con .box .all div a:hover{border-bottom: 1px solid #6a6a6a;}
+}

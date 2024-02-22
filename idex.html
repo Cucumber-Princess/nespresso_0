@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NESPRESSO</title>
+
+    <link rel="stylesheet" href="style/style_mob.css">
+    <link rel="stylesheet" href="style/style_tab.css">
+    <link rel="stylesheet" href="style/style_pc.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="wrap">
+                <h1>
+                    <a href="#">
+                        <img class="m tab" src="image/logo_W.png" alt="로고">
+                        <img class="pc" src="image/logo_B.png" alt="로고">
+                    </a>
+                </h1>
+                <div class="btn-opn tab m"><button><img src="image/hamberger_W.png" alt="메뉴오픈"></button></div>
+                <div class="basket tab m"><a href="#"><img src="image/order_W.png" alt="장바구니 버튼"></a></div>
+                <nav>
+                    <div class="top">
+                        <div class="rogo"><a href="#"><img src="image/rogo_box_W.jpg" alt="로고"></a></div>
+                        <div class="btn-cls"><button><img src="image/x_B.png" alt="메뉴닫기"></button></div>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="검색어를 입력하세요.">
+                        <button><img src="image/search_B.png" alt="검색 버튼"></button>
+                    </div>
+                    <ul class="menu">
+                        <li>
+                            <div class="btn"><button>커피</button></div>
+                            <div class="box">
+                                <div class="con"><a href="#">버츄오 커피</a></div>
+                                <div class="con"><a href="#">오리지널 커피</a></div>
+                                <div class="con"><a href="#">커피 정기 배송</a></div>
+                                <div class="con"><a href="#">나의 커피 취향 찾기</a></div>
+                                <div class="con"><a href="#">커피 레시피</a></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="btn"><button>머신</button></div>
+                            <div class="box">
+                                <div class="con"><a href="#">버츄오 머신</a></div>
+                                <div class="con"><a href="#">오리지널 머신</a></div>
+                                <div class="con"><a href="#">머신 페이백</a></div>
+                                <div class="con"><a href="#">오리지널 · 버츄오 머신 비교</a></div>
+                                <div class="con"><a href="#">선물하기 좋은 제품</a></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="btn"><button>액세서리</button></div>
+                            <div class="box">
+                                <div class="con"><a href="#">버츄오 액세사리</a></div>
+                                <div class="con"><a href="#">오리지널 액세사리</a></div>
+                                <div class="con"><a href="#">거품기</a></div>
+                                <div class="con"><a href="#">푸드 · 바이트</a></div>
+                                <div class="con"><a href="#">재활용백 주문 및 수거 신청</a></div>
+                                <div class="con"><a href="#">머신 부속품</a></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="btn"><button>정품 등록</button></div>
+                            <div class="box">
+                                <div class="con"><a href="#">정품 등록</a></div>
+                                <div class="con"><a href="#">정품 등록 안내</a></div>
+                                <div class="con"><a href="#">보증 기간 안내</a></div>
+                                <div class="con"><a href="#">머신 사용 안내</a></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="btn"><button>클럽 멤버</button></div>
+                            <div class="box">
+                                <div class="con"><a href="#">혜택 안내</a></div>
+                                <div class="con"><a href="#">머신 100% 페이백</a></div>
+                                <div class="con"><a href="#">머신 무상 수리 혜택</a></div>
+                                <div class="con"><a href="#">스마일 포인트 혜택 안내</a></div>
+                                <div class="con"><a href="#">신규 회원을 위한 웰컴 기프트</a></div>
+                                <div class="con"><a href="#">이 달의 커피 할인 혜택</a></div>
+                            </div>
+                        </li> 
+                        <li>
+                            <div class="btn"><button>재활용</button></div>
+                            <div class="box">
+                                <div class="con"><a href="#">재활용 프로그램</a></div>
+                                <div class="con"><a href="#">재활용백 주문 및 수거 요청</a></div>
+                                <div class="con"><a href="#">재활용 캡슐 수거 지점</a></div>
+                                <div class="con"><a href="#">네스프레소의 약속</a></div>
+                                <div class="con"><a href="#">함께 만드는 좋은 커피</a></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="gnb">
+                        <div class="src_btn pc">
+                            <button>
+                                <img src="image/search_W.png" alt="검색창 오픈 버튼">
+                            </button>
+                        </div>
+                        <div class="src pc">
+                            <div class="logo"><a href="#"><img src="image/logo_B.png" alt="로고"></a></div>
+                            <div class="search">
+                                <button><img src="image/search_B.png" alt="검색 버튼"></button>
+                                <input type="text" placeholder="검색어를 입력하세요.">
+                                <button class="src-cls"><img src="image/x_B.png" alt="검색 닫기 버튼"></button>
+                            </div>
+                        </div>
+                        <div class="busin">
+                            <div class="btn">
+                                <button>
+                                    <img class="pc" src="image/business_W.png" alt="비지니스 버튼">
+                                    <img class="m tab" src="image/business_B.png" alt="비지니스 버튼">
+                                </button>
+                            </div>
+                            <div class="box">
+                                <div class="con"><a href="#">커피 솔루션</a></div>
+                                <div class="con"><a href="#">클럽 멤버 후기</a></div>
+                                <div class="con"><a href="#">기업용 커피</a></div>
+                                <div class="con"><a href="#">기업용 머신</a></div>
+                            </div>
+                        </div><!--busin-->
+                        <div class="call">
+                            <div class="btn">
+                                <button>
+                                    <img class="pc" src="image/ask_W.png" alt="문의 버튼">
+                                    <img class="m tab" src="image/ask_B.png" alt="문의 버튼">
+                                </button>
+                            </div>
+                            <div class="box">
+                                <div class="con"><a href="#">자주 묻는 질문</a></div>
+                                <div class="con"><a href="#">네스프레소 서비스</a></div>
+                                <div class="con"><a href="#">머신 사용 안내</a></div>
+                                <div class="con"><a href="#">앱 다운로드</a></div>
+                                <div class="con"><a href="#">매장 찾기</a></div>
+                            </div>
+                        </div>
+                        <div class="me">
+                            <div class="btn">
+                                <button>
+                                    <img class="pc" src="image/me_W.png" alt="내 정보 버튼">
+                                    <img class="m tab" src="image/me_B.png" alt="내 정보 버튼">
+                                </button>
+                            </div>
+                            <div class="box">
+                                <div class="con"><a href="#">로그인</a></div>
+                                <div class="con"><a href="#">회원 가입</a></div>
+                                <div class="con"><a href="#">나의 주문</a></div>
+                                <div class="con"><a href="#">결제 영수증 출력</a></div>
+                            </div>
+                        </div>
+                        <div class="basket">
+                            <a href="#">
+                                <img class="pc" src="image/order_W.png" alt="장바구니 버튼">
+                                <img class="m tab" src="image/order_B.png" alt="장바구니 버튼">
+                            </a>
+                        </div>
+                    </div><!--gnb-->
+                </nav>
+            </div><!--wrap-->
+        </header>
+
+        <div class="banner">
+            <video autoplay loop muted poster="image/banner2.jpg" preload="auto">
+                <source src="image/banner2.mp4" type="video/mp4">
+                커피 제작 영상
+            </video>
+        </div>
+
+        <div class="menu">
+            <div class="swiper coffeeSlider">
+                <div class="txt">
+                    <h3>커피</h3>
+                    <p>오리지널</p>
+                </div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="#"><img src="image/coffee_o_1.png" alt="오리지날 커피 1"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="image/coffee_o_2.png" alt="오리지날 커피 1"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="image/coffee_o_3.png" alt="오리지날 커피 1"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="image/coffee_o_4.png" alt="오리지날 커피 1"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="image/coffee_o_5.png" alt="오리지날 커피 1"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="image/coffee_o_6.png" alt="오리지날 커피 1"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="image/coffee_o_7.png" alt="오리지날 커피 1"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="image/coffee_o_8.png" alt="오리지날 커피 1"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="image/coffee_o_9.png" alt="오리지날 커피 1"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="image/coffee_o_10.png" alt="오리지날 커피 1"></a></div>
+                </div>
+                <div class="next"><img src="image/movement_r_W.png" alt="메뉴 오른쪽 버튼"></div>
+                <!-- 슬라이더를 바꾸고 싶다면 클래스 이름을 바꾸고, 자바의 이름도 원하는 이름으로 바꾸면 자유롭게 변경 가능-->
+                <div class="prev"><img src="image/movement_l_W.png" alt="메뉴 왼쪽 버튼"></div>
+            </div>
+            <div class="swiper coffeeSlider sw2">
+                <p class="only_b">버츄오</p>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="#"><img src="image/coffee_b_1.png" alt="버츄오 커피 1"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="image/coffee_b_2.png" alt="버츄오 커피 1"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="image/coffee_b_3.png" alt="버츄오 커피 1"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="image/coffee_b_4.png" alt="버츄오 커피 1"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="image/coffee_b_5.png" alt="버츄오 커피 1"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="image/coffee_b_6.png" alt="버츄오 커피 1"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="image/coffee_b_7.png" alt="버츄오 커피 1"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="image/coffee_b_8.png" alt="버츄오 커피 1"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="image/coffee_b_9.png" alt="버츄오 커피 1"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="image/coffee_b_10.png" alt="버츄오 커피 1"></a></div>
+                </div>
+                <div class="next"><img src="image/movement_r_W.png" alt="메뉴 오른쪽 버튼"></div>
+                <div class="prev"><img src="image/movement_l_W.png" alt="메뉴 왼쪽 버튼"></div>
+            </div>
+            <div class="view"><a href="#">VIEW MORE</a></div>
+        </div>
+       
+        <div id="inside">
+            <div class="machine">
+                <div class="wrap">
+                    <h3 data-aos="fade-up" data-aos-anchor-placement="top-bottom">머신</h3>
+                    <div class="main" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                        <div class="origin"><a href="#">
+                            <div class="txt">
+                                <p>Original Machine</p>
+                                <h4>오리지널 머신</h4>
+                            </div>
+                            <img src="image/machine_origin.jpg" alt="오리지널 머신">
+                        </a></div>
+                        <div class="vertuo"><a href="#">
+                            <div class="txt">
+                                <p>Vertuo Machine</p>
+                                <h4>버츄오 머신</h4>
+                            </div>
+                            <img src="image/machine_vetur.jpg" alt="버츄오 머신">
+                        </a></div>
+                    </div>
+                    <div class="select" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                        <div class="txt">
+                            <div class="type">
+                                <button type="button" class="o_opn"><img src="image/orignal_B.png" alt="오리지널 버튼"></button>
+                                <button type="button" class="v_opn"><img src="image/Vertuo_B.png" alt="버츄오 버튼"></button>
+                            </div>
+                            <h4>나에게 맞는 제품을<br class="m tab"> 찾아보세요</h4>
+                        </div>
+                        <div class="o">
+                            <div class="swiper machine_o">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><a href="#">
+                                        <img src="image/orgin_1.png" alt="오리지널 머신1">
+                                        <p class="tit">에센자 미니</p>
+                                        <p class="price">₩199,000</p>
+                                        <p class="con">미니멀리스트를 위한<br>컴팩트한 사이즈와 디자인</p>
+                                    </a></div>
+                                    <div class="swiper-slide"><a href="#">
+                                        <img src="image/orgin_2.png" alt="오리지널 머신2">
+                                        <p class="tit">픽시</p>
+                                        <p class="price">₩249,000</p>
+                                        <p class="con">인더스트리얼 감성</p>
+                                    </a></div>
+                                    <div class="swiper-slide"><a href="#">
+                                        <img src="image/orgin_3.png" alt="오리지널 머신3">
+                                        <p class="tit">시티즈 플래티넘</p>
+                                        <p class="price">₩349 ,000</p>
+                                        <p class="con">에스프레소부터<br>아메리카노까지<br>4가지 컵 사이즈로 즐기는<br>오리지널 커피</p>
+                                    </a></div>
+                                </div>
+                                <div class="next tab pc"><img src="image/movemen_r_B.png" alt="메뉴 오른쪽 버튼"></div>
+                                <div class="prev tab pc"><img src="image/movement_l_B.png" alt="메뉴 왼쪽 버튼"></div>
+                            </div><!--machine_o-->
+                        </div><!--o-->
+                        <div class="v">
+                            <div class="swiper machine_v">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><a href="#">
+                                        <img src="image/Vertuo_1.png" alt="버츄오 머신1">
+                                        <p class="tit">에센자 미니</p>
+                                        <p class="price">₩199,000</p>
+                                        <p class="con">미니멀리스트를 위한<br>컴팩트한 사이즈와 디자인</p>
+                                    </a></div>
+                                    <div class="swiper-slide"><a href="#">
+                                        <img src="image/Vertuo_2.png" alt="버츄오 머신2">
+                                        <p class="tit">픽시</p>
+                                        <p class="price">₩249,000</p>
+                                        <p class="con">인더스트리얼 감성</p>
+                                    </a></div>
+                                    <div class="swiper-slide"><a href="#">
+                                        <img src="image/Vertuo_3.png" alt="버츄오 머신3">
+                                        <p class="tit">시티즈 플래티넘</p>
+                                        <p class="price">₩349,000</p>
+                                        <p class="con">에스프레소부터<br> 아메리카노까지<br>4가지 컵 사이즈로 즐기는 오리지널 커피</p>
+                                    </a></div>
+                                </div>
+                                <div class="next tab pc"><img src="image/movemen_r_B.png" alt="메뉴 오른쪽 버튼"></div>
+                                <div class="prev tab pc"><img src="image/movement_l_B.png" alt="메뉴 왼쪽 버튼"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--machine-->
+
+            <div class="event">
+                <div class="wrap">
+                    <h3 data-aos="fade-up" data-aos-anchor-placement="top-bottom">새로운 소식</h3>
+                    <div class="swiper mySwiper" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><a href="#">
+                            <div class="txt">
+                                <div class="title">2월의 추천 커피와 도서</div>
+                                <div class="con">
+                                    인간의 강인한 생존력을 엿볼 수 있는「파친코」와 함께, 디아볼리토의 강렬한 커피를 마시며 감동을 한층 더 느껴보세요.
+                                </div>
+                            </div>
+                            <div class="go_btn">
+                                <img class="w" src="image/arrow_s_W.png" alt="이동 버튼">
+                                <img class="b" src="image/sarrow_s_B.png" alt="이동 버튼">
+                            </div>
+                            <div class="img"><img src="image/event_1.avif" alt="이벤트 이미지1"></div>
+                          </a></div>
+                          <div class="swiper-slide"><a href="#">
+                            <div class="img"><img src="image/event_2.avif" alt="이벤트 이미지2"></div>
+                            <div class="txt">
+                                <div class="title">버츄오 머신 최대 11만원 할인</div>
+                                <div class="con">자세한 내용을 확인해주세요.</div>
+                            </div>
+                            <div class="go_btn">
+                                <img class="b" src="image/sarrow_s_B.png" alt="이동 버튼">
+                                <img class="w" src="image/arrow_s_W.png" alt="이동 버튼">
+                            </div>
+                          </a></div>
+                          <div class="swiper-slide">
+                            <div class="img"><img src="image/event_3.avif" alt="이벤트 이미지3"></div>
+                            <div class="txt">
+                                <div class="title">한정 기간 커피 1천원 혜택</div>
+                                <div class="con">이달의 커피 스토리를 만나보세요.</div>
+                            </div>
+                            <div class="go_btn">
+                                <img class="b" src="image/sarrow_s_B.png" alt="이동 버튼">
+                                <img class="w" src="image/arrow_s_W.png" alt="이동 버튼">
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img"><img src="image/event_4.avif" alt="이벤트 이미지4"></div>
+                            <div class="txt">
+                                <div class="title">다르칸이 돌아왔어요!</div>
+                                <div class="con">2013년 부터 많은 사랑을 받았던 다르칸을 한정판으로 다시 만나보세요.</div>
+                            </div>
+                            <div class="go_btn">
+                                <img class="b" src="image/sarrow_s_B.png" alt="이동 버튼">
+                                <img class="w" src="image/arrow_s_W.png" alt="이동 버튼">
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img"><img src="image/event_5.avif" alt="이벤트 이미지5"></div>
+                            <div class="txt">
+                                <div class="title">초콜릿 프로모션</div>
+                                <div class="con">커피 100캡슐 이상 구매 시 초콜릿 30% 할인</div>
+                            </div>
+                            <div class="go_btn">
+                                <img class="b" src="image/sarrow_s_B.png" alt="이동 버튼">
+                                <img class="w" src="image/arrow_s_W.png" alt="이동 버튼">
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="swiper-pagination event_line"></div>
+                </div><!--wrap-->
+            </div><!--event-->
+
+            <div class="etc">
+                <div class="wrap">
+                    <h3 data-aos="fade-up" data-aos-anchor-placement="top-bottom">액세서리</h3>
+                    <div class="container">
+                        <div class="top" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                            <a href="#">
+                                <div class="txt">
+                                    <h4>음료 제조</h4>
+                                    <p>우유 거품기, 캡슐 디스펜서 등 다양한 필수 아이템들을 만나보세요.</p>
+                                </div>
+                                <div class="img">
+                                    <video autoplay loop muted poster="image/etc.jpg" preload="auto">
+                                        <source src="image/etc.mp4" type="video/mp4">
+                                        커피 제작 영상
+                                    </video>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bottom" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                            <div class="box"><a href="#">
+                                <div class="txt">
+                                    <h4>푸드&바이트</h4>
+                                    <p>초콜릿, 비스킷, 그리고 설탕으로 더 풍성하고 짙은 커피 모먼트를<br> 경험해 보세요.</p>
+                                </div>
+                                <div class="img"> <img src="image/food.jpg" alt="초콜릿 사진"></div>
+                            </a></div>
+                            <div class="box"><a href="#">
+                                <div class="txt">
+                                    <h4>머신 부속품</h4>
+                                    <p>부품이 필요할 때는 여기를 확인하세요.</p>
+                                </div>
+                                <div class="img"><img src="image/part.jpg" alt="부속품 모음 사진"></div>
+                            </a></div>
+                        </div>
+                    </div>
+                </div><!--wrap-->
+            </div><!--etc-->
+        </div><!--inside-->
+
+        <div class="brand">
+            <div class="wrap">
+                <div class="con">
+                    <h2>Doing is everything</h2>
+                    <img src="image/logo_B.png" alt="브랜드 로고">
+                </div>
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="wrap">
+                <div class="container">
+                    <div class="box"><a href="#">
+                        <div class="img"><img src="image/sub_alam.png" alt="알람픽토그램"></div>
+                        <div class="text">
+                            <div class="tit">카카오톡 채널 추가</div>
+                            <div class="txt">네스프레소 카톡 채널을 추가하고,<br>다양한 소식을 받아보세요.</div>
+                        </div>
+                    </a></div>
+                    <div class="box"><a href="#">
+                        <div class="img"><img src="image/sub_present.png" alt="선물픽토그램"></div>
+                        <div class="text">
+                            <div class="tit">웰컴 기프트</div>
+                            <div class="txt">신규 클럽 회원을 위한 웰컴 기프트</div>
+                        </div>
+                    </a></div>
+                    <div class="box"><a href="#">
+                        <div class="img"><img src="image/sub_recycle.png" alt="재활용픽토그램"></div>
+                        <div class="text">
+                            <div class="tit">캡슐 재활용</div>
+                            <div class="txt">재활용 백 수거 또는 재활용 백을<br>주문과 함께 신청해주세요.</div>
+                        </div>
+                    </a></div>
+                    <div class="box"><a href="#">
+                        <div class="img"><img src="image/sub_machine.png" alt="머신픽토그램"></div>
+                        <div class="text">
+                            <div class="tit">머신 기술 지원 서비스</div>
+                            <div class="txt">머신 사용법과 문제 해결책,<br>AS정보를 확인해 보세요.</div>
+                        </div>
+                    </a></div>
+                </div>
+            </div><!--wrap-->
+        </div><!--service-->       
+        
+        <div class="sub_footer">
+            <div class="wrap">
+                <div class="top">
+                    <div class="logo"><a href="#"><img src="image/logo_W.png" alt="로고"></a></div>
+                </div>
+                <div class="bottom">
+                    <div class="con">
+                        <div class="box">
+                            <h5>100% 안전결제</h5>
+                            <div class="card">
+                                <img src="image/card_1.png" alt="신용카드 픽토그램">
+                                <img src="image/card_2.png" alt="뱅크 픽토그램">
+                            </div>
+                        </div>
+                        <div class="box">
+                            <h5>신용카드 무이자 할부 혜택</h5>
+                            <p class="line"><a href="#">자세히 보기</a></p>
+                        </div>
+                        <div class="country">
+                            <select>
+                                <option>한국어
+                                <option>영어    
+                            </select>
+                        </div>
+                    </div>
+                    <div class="con">
+                        <div class="box">
+                            <h5>제품</h5>
+                            <ul>
+                                <li><a href="#">버츄오 커피</a></li>
+                                <li><a href="#">오리지널 커피</a></li>
+                                <li><a href="#">버츄오 머신</a></li>
+                                <li><a href="#">오리지널 머신</a></li>
+                                <li><a href="#">액세서리</a></li>
+                            </ul>
+                        </div>
+                        <div class="box">
+                            <h5>네스프레소 소개</h5>
+                            <ul>
+                                <li><a href="#">네스프레소의 약속</a></li>
+                                <li><a href="#">재활용</a></li>
+                                <li><a href="#">매장 찾기</a></li>
+                                <li><a href="#">채용</a></li>
+                                <li><a href="#">네스프레소 프로페셔널</a></li>
+                            </ul>
+                        </div>
+                        <div class="box">
+                            <h5>고객서비스</h5>
+                            <ul>
+                                <li><a href="#">자주하는 질문(FQA)</a></li>
+                                <li><a href="#">네스프레소 서비스</a></li>
+                                <li><a href="#">머신 사용 안내</a></li>
+                                <li><a href="#">결제영수증 출력</a></li>
+                                <li><a href="#">배송 조회</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="con">
+                        <div class="box ask">
+                            <h5>문의하기</h5>
+                            <div class="all">
+                                <div>
+                                    <a href="#">라이브 챗</a><br>
+                                    실시간 채팅 상담을<br class="m tab"> 원하시면<br class="m tab">
+                                    “라이브 챗”을<br class="m tab"> 클릭해주세요.<br>
+                                    월~금. 14~17시
+                                </div>
+                                <div>
+                                    국내 전화<br>
+                                    080-734-1111<br>
+                                    매일. 9시~18시<br>
+                                    수신자 부담
+                                </div>
+                                <div>
+                                    국제 전화<br>
+                                    +82 2-3277-1398
+                                </div>
+                                <div>
+                                   <a href="#">이메일 문의하기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--wrap-->
+        </div><!-- sub-footer -->
+
+        <footer>
+            <div class="wrap">
+                <div class="text">
+                    <ul>
+                        <li><a href="#">판매이용약관</a></li>
+                        <li><a href="#">개인정보 처리방침</a></li>
+                        <li><a href="#">쿠키</a></li>
+                        <li><a href="#">고객지원</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">커피 레시피</a></li>
+                        <li><a href="#">용어찾기</a></li>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">사이트맵</a></li>
+                        <li><a href="#">웹 접근성</a></li>
+                    </ul>
+                    <p>Nestle Nespresso S.A 2024</p>
+                </div>
+                <div class="sns">
+                    <div><a href="#"><img src="image/sns_I.png" alt="인스타 픽토그램"></a></div>
+                    <div><a href="#"><img src="image/sns_Y.png" alt="유튜브 픽토그램"></a></div>
+                    <div><a href="#"><img src="image/sns_T.png" alt="트위터 픽토그램"></a></div>
+                    <div><a href="#"><img src="image/sns_F.png" alt="페이스북 픽토그램"></a></div>
+                    <div><a href="#"><img src="image/sns_P.png" alt="핀터레스트 픽토그램"></a></div>
+                </div>
+                <div class="copy">
+                    상호 : 네슬레코리아 유한책임회사 대표자 : 토마스제프리카소 사업자등록번호 : 110-86-10100<br class="m tab">
+                    <a href="#">통신판매업신고: 2014-서울서대문2047</a><br>
+                    <a href="#">채무지급보증안내</a> <a href="#">대표번호 : 080-734-1111</a> 이메일 : club.korea@nespresso.com<br class="m tab">
+                    주소 : 서울시 서대문구 충정로70 웨스트게이트타워 16층
+                </div>
+            </div>
+        </footer>
+    </div><!--wraper-->
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!--스크롤 애니메이션-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> <!--스와이퍼 애니메이션-->
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script>
+        AOS.init(); //스크롤 애니메이션 연결
+
+        $(".btn-opn").on("click",function(){
+            $("nav").stop().animate({
+                "left": 0
+            });
+        })
+        $(".btn-cls").on("click",function(){
+            $("nav").stop().animate({
+                "left" : "-100%"
+            });
+        })
+
+        $(".menu .btn button").on("mouseenter", function() {
+            $(".box").stop().slideUp(300);
+            $(this).parent().next().stop().slideToggle(300);
+
+            $(".btn button").removeClass("on"); 
+        }).on("mouseleave", function(){ /*마우스가 떠나면 메뉴가 닫히게*/
+            $(this).parent().next().stop().slideUp(300);     
+        });
+
+        $(".gnb .src_btn").on("click",function(){
+            $(".gnb .src").stop().animate({
+                "top": 0
+            });
+        })
+        $(".src .search .src-cls").on("click",function(){
+            $(".gnb .src").stop().animate({
+                "top":"-100%"
+            });
+        })
+
+        /* 슬라이드_커피 */
+        var swiper = new Swiper('.coffeeSlider', {
+            slidesPerView: 2.5,
+            navigation: {
+                nextEl: '.coffeeSlider .next',
+                prevEl: '.coffeeSlider .prev',
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            freeMode: true,  
+            breakpoints: {
+                770: {
+                    slidesPerView: 5,
+                },
+                1200: {
+                    slidesPerView: 7,
+                }
+            },
+        });
+
+        function getDirection() {
+            var windowWidth = window.innerWidth;
+            var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+            return direction;
+        }
+
+         /* 머신 추천 */
+         $(".select .o_opn").on("click",function(){
+            $(this).css("opacity","1");
+            $(this).next().css("opacity","0.3");
+
+            $(".select .o").css("display","flex");
+            $(".select .v").css("display","none");
+        })
+        $(".select .v_opn").on("click",function(){
+            $(this).css("opacity","1");
+            $(this).prev().css("opacity","0.3");
+
+            $(".select .o").css("display","none");
+            $(".select .v").css("display","flex");
+        });
+
+         /* 슬라이드_오리지널 머신 */
+         var swiper = new Swiper('.machine_o', {
+            slidesPerView: 2.5,
+            navigation: {
+                nextEl: '.machine_o .next',
+                prevEl: '.machine_o .prev',
+            },
+  
+            breakpoints: {
+                770: {
+                    slidesPerView: 5,
+                },
+                1200: {
+                    slidesPerView: 7,
+                }
+            },
+        });
+
+        function getDirection() {
+            var windowWidth = window.innerWidth;
+            var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+            return direction;
+        }
+         /* 슬라이드_버츄오 머신 */
+         var swiper = new Swiper('.machine_v', {
+            slidesPerView: 2.5,
+            navigation: {
+                nextEl: '.machine_v .next',
+                prevEl: '.machine_v .prev',
+            },
+  
+            breakpoints: {
+                770: {
+                    slidesPerView: 5,
+                },
+                1200: {
+                    slidesPerView: 7,
+                }
+            },
+        });
+
+        function getDirection() {
+            var windowWidth = window.innerWidth;
+            var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+            return direction;
+        }
+
+        //이벤트 슬라이더
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1.5,
+            spaceBetween: 15, /* 사이 간격 조정! */
+            pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+                
+            },
+            breakpoints: {
+                770: {
+                    slidesPerView: 2.5,
+                },
+                1200: {
+                    slidesPerView: 3.5,
+                }
+            }
+        });
+      
+       
+
+
+        /* 
+            질문 목록
+            1. 버츄얼 버튼 누를 시 안 뜨는것
+            2. 슬라이드 변경 방법(버튼을 변경하고 싶은데 after이 어디있는지 모르겠음)
+            3. 슬라이드 화면 너비 줄일 시 무한으로 늘어나는 문제
+            4. gnb pc인 경우에만 자바스크립트 작동하도록
+             + pc인 경우는 클릭
+             + mob인 경우는 마우스 오버로
+            5. gnb 마우스오버시 겹쳐지는 문제
+        
+        */
+    </script>
+</body>
+</html>

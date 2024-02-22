@@ -1,0 +1,66 @@
+@media (min-width: 770px) {
+    .pc{display: none;}
+    .m{display: none;}
+    .tab{display: block;}
+
+    #inside{width: 80%; margin: 0 auto;}
+
+    .machine .wrap{margin-top: 150px; font-family: "Pretendard";}
+    .machine .wrap h3{font-size: 20px;}
+    .machine .wrap .main{margin-top: 20px; display: flex; gap: 25px;}
+    .machine .wrap .main .vertuo{
+        margin-top: unset;
+    }
+    .machine .wrap .select .o .machine_o .swiper-wrapper{gap: 60px; display: flex; justify-content: center;}
+    .machine .wrap .select .v .machine_v .swiper-wrapper{gap: 60px; display: flex; justify-content: center;}
+
+    .etc .wrap .container{
+        display: flex;
+        gap: 20px;
+    }
+    .etc .wrap .top{height: unset;}
+    .etc .wrap .top .img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .etc .wrap .bottom{width: 100%;}
+
+    .brand .wrap .con{
+        background-image: url(../image/brand_pc.png);
+        background-size: 1,920.5px;
+        background-position: center bottom;
+    }
+    
+    .service .wrap .container{
+        padding: 40px 0;
+        display: flex;
+        
+    }
+    .service .wrap .container .box{
+        width: 100%;
+        height: 220px;
+        background-color: white;
+        margin-bottom: unset;
+        border-radius: 5px;
+        margin-left: 15px;
+        display: flex;
+        position: relative;
+    }
+
+    .service .wrap .container .box a{width: 100%; height: 100%;}
+
+    .service .wrap .container .box .img{padding-right: unset;}
+    .service .wrap .container .box .text{
+        position: absolute;
+        top: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .service .wrap .container .box .text .tit{font-size: 20px; font-weight: bold;}
+    .service .wrap .container .box .text .txt{margin-top: 3px; font-size: 18px;}
+
+    
+}
