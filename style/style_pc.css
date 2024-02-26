@@ -31,7 +31,7 @@
         flex-direction: unset;
     }
     header .wrap nav .top{display: none;}
-    header .wrap nav .search{display: none; border: none;} /* 잠시 대기 */
+    header .wrap nav .search{display: none; border: none;}
     header .wrap nav .menu{
         order: unset;
         display: flex;
@@ -60,6 +60,7 @@
         font-size: 15px;
     }
     header .wrap nav .menu li .btn button.on{color: unset;}
+ 
     header .wrap nav .menu li .box{
         display: none;
         position: absolute;
@@ -84,6 +85,7 @@
         background-color: unset;
         background-image: unset;
     }
+
     header .wrap nav .menu li:nth-child(4) .box .con a{
         background-color: unset;
         border-bottom: unset;
@@ -192,6 +194,9 @@
         padding-bottom: 0;
     }
     header .wrap nav .gnb .basket img{width: 40px;}
+
+    .menu .coffeeSlider .next{display: none;}
+    .menu .coffeeSlider .prev{display: none;}
 
     .machine .wrap .select .o .machine_o .swiper-wrapper{gap: 100px; display: flex; justify-content: center;}
     .machine .wrap .select .v .machine_v .swiper-wrapper{gap: 100px; display: flex; justify-content: center;}
