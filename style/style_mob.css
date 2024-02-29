@@ -569,12 +569,12 @@ body {
 .sub_footer .wrap .bottom{display: flex; flex-direction: column; gap: 30px; padding: 60px 0;}
 .sub_footer .wrap .bottom .con{display: flex; justify-content: space-between;  gap: 20px;}
 .sub_footer .wrap .bottom .con .box{width: 100%;}
-.sub_footer .wrap .bottom .con .box h5{font-size: 20px;}
-.sub_footer .wrap .bottom .con .box p{font-size: 18px; font-weight: lighter; margin-top: 5px; color: #6a6a6a;}
-.sub_footer .wrap .bottom .con .box ul li{font-size: 18px; font-weight: lighter; margin-top: 5px; color: #6a6a6a;}
+.sub_footer .wrap .bottom .con .box h5{font-size: 18px; white-space: nowrap;}
+.sub_footer .wrap .bottom .con .box p{font-size: 15px; font-weight: lighter; margin-top: 5px; color: #6a6a6a;}
+.sub_footer .wrap .bottom .con .box ul li{font-size: 15px; font-weight: lighter; margin-top: 5px; color: #6a6a6a;}
 .sub_footer .wrap .bottom .con .box ul li:hover a{border-bottom: 1px solid #6a6a6a;}
 .sub_footer .wrap .bottom .con .ask .all{display: flex; justify-content: space-between; gap: 20px;}
-.sub_footer .wrap .bottom .con .box .all div{font-size: 17px; font-weight: lighter; margin-top: 5px; color: #6a6a6a;}
+.sub_footer .wrap .bottom .con .box .all div{font-size: 15  px; font-weight: lighter; margin-top: 5px; color: #6a6a6a;}
 .sub_footer .wrap .bottom .con .box .all div a:hover{border-bottom: 1px solid #6a6a6a;}
 /* 카드 */
 .sub_footer .wrap .bottom .con .box .card{display: flex;}
