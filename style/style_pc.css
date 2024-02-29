@@ -196,15 +196,32 @@
     }
     header .wrap nav .gnb .basket img{width: 40px;}
 
+    .menu .coffeeSlider .swiper-wrapper .swiper-slide:hover{
+        scale: 120%;
+        transition: all 0.2s linear;
+    }
+    .menu .coffeeSlider .swiper-wrapper .swiper-slide:not(:hover){
+        scale: 100%;
+        transition: all 0.2s linear;
+    }
     .menu .coffeeSlider .next{display: none;}
     .menu .coffeeSlider .prev{display: none;}
+
+    .machine .wrap .main .origin:hover img{
+        scale: 110%;
+        transition: all 0.2s linear;
+    }
+    .machine .wrap .main .origin:not(:hover) img{
+        scale: 100%;
+        transition: all 0.2s linear;
+    }
 
     .machine .wrap .select .o .machine_o .swiper-wrapper{gap: 100px; display: flex; justify-content: center;}
     .machine .wrap .select .v .machine_v .swiper-wrapper{gap: 100px; display: flex; justify-content: center;}
 
     .service .wrap{width: 80%;}
     
-    .sub_footer .wrap .bottom{display: flex; flex-direction: unset; gap: unset; padding: 20px 0; width: 100%; justify-content: space-between;}
+    .sub_footer .wrap .bottom{display: flex; flex-direction: unset; gap: unset; padding: 60px 0; width: 100%; justify-content: space-between;}
     .sub_footer .wrap .bottom .con{display: flex; flex-direction: column; justify-content: space-between;}
     .sub_footer .wrap .bottom .con:first-child{width: 300px; margin-right: 50px; white-space: nowrap;}
     .sub_footer .wrap .bottom .con:nth-child(2){display: flex; flex-direction: unset; justify-content: space-between; width: 100%; gap: 30px}

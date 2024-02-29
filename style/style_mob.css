@@ -185,11 +185,11 @@ body {
     gap: 20px;
 }
 .menu .coffeeSlider .swiper-wrapper .swiper-slide:hover{
-    scale: 120%;
-    transition: all 0.2s linear;
+    scale: unset;
+    transition: unset;
 }
 .menu .coffeeSlider .swiper-wrapper .swiper-slide:not(:hover){
-    transition: all 0.2s linear;
+    transition: unset;
 }
 .swiper .next{
     z-index: 1;
@@ -258,12 +258,12 @@ body {
     background-color: #000;
 }
 .machine .wrap .main .origin:hover img{
-    scale: 110%;
-    transition: all 0.2s linear;
+    scale: unset;
+    transition: unset;
 }
 .machine .wrap .main .origin:not(:hover) img{
-    scale: 100%;
-    transition: all 0.2s linear;
+    scale: unset;
+    transition: unset;
 }
 .machine .wrap .main .origin .txt{
     position: absolute;
@@ -600,7 +600,7 @@ footer .wrap{
     text-align: center;
     padding: 60px 0;
 }
-footer .wrap .text ul{display: flex; justify-content: center; margin-bottom: 10px;}
+footer .wrap .text ul{display: flex; justify-content: center; margin-bottom: 10px; white-space: nowrap;}
 footer .wrap .text ul:first-child li:nth-child(2){color: white;}
 footer .wrap .text ul li::after{
     content: '|';
