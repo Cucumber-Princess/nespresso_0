@@ -578,7 +578,7 @@ body {
 .sub_footer .wrap .bottom .con .box .all div a:hover{border-bottom: 1px solid #6a6a6a;}
 /* 카드 */
 .sub_footer .wrap .bottom .con .box .card{display: flex;}
-.sub_footer .wrap .bottom .con .box .card img{width: 60px; margin-right: 5px;}
+.sub_footer .wrap .bottom .con .box .card img{width: 40px; margin-right: 5px;}
 .sub_footer .wrap .bottom .con .box .card img:last-child{margin-right: 0;}
 /* 국가 */
 .sub_footer .wrap .bottom .con .country select{
@@ -592,7 +592,7 @@ body {
 
 footer{background-color: #000;}
 footer .wrap{
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     font-size: 15px;
     font-family: "Pretendard";
@@ -600,7 +600,7 @@ footer .wrap{
     text-align: center;
     padding: 60px 0;
 }
-footer .wrap .text ul{display: flex; justify-content: center; margin-bottom: 10px; white-space: nowrap;}
+footer .wrap .text ul{display: flex; justify-content: center; margin-bottom: 10px;}
 footer .wrap .text ul:first-child li:nth-child(2){color: white;}
 footer .wrap .text ul li::after{
     content: '|';
