@@ -10,7 +10,7 @@ input{background-color: transparent; border: none;}
 
 #wrapper{min-width: 320px; background-color: white;}
 
-header{position: absolute; top: 0; left:0; width: 100%; z-index: 60;}
+header{position: fixed; top: 0; left:0; width: 100%; z-index: 60;}
 header .wrap{
     width: 100%;
     height: 50px;
@@ -87,6 +87,7 @@ header .wrap nav .menu li .btn button.open{
 header .wrap nav .menu li .btn button.on{
     color: #000;
 }
+
 header .wrap nav .menu li .box .con a{
     display: block;
     width: 100%;
@@ -181,6 +182,14 @@ body {
 }
 .menu .coffeeSlider .swiper-wrapper{
     transition-timing-function: linear;
+    gap: 20px;
+}
+.menu .coffeeSlider .swiper-wrapper .swiper-slide:hover{
+    scale: 120%;
+    transition: all 0.2s linear;
+}
+.menu .coffeeSlider .swiper-wrapper .swiper-slide:not(:hover){
+    transition: all 0.2s linear;
 }
 .swiper .next{
     z-index: 1;
@@ -246,14 +255,24 @@ body {
     position: relative;
     border-radius: 10px;
     overflow: hidden;
+    background-color: #000;
+}
+.machine .wrap .main .origin:hover img{
+    scale: 110%;
+    transition: all 0.2s linear;
+}
+.machine .wrap .main .origin:not(:hover) img{
+    scale: 100%;
+    transition: all 0.2s linear;
 }
 .machine .wrap .main .origin .txt{
     position: absolute;
     bottom: 5%;
     left: 5%;
     color: white;
+    z-index: 20;
 }
-.machine .wrap .main .origin .txt h4{font-size: 30px; margin-top: 3px;}
+.machine .wrap .main .origin .txt h4{font-size: 25px; margin-top: 3px;}
 .machine .wrap .main .origin .txt p{font-size: 22.9px; font-weight: lighter;}
 .machine .wrap .main .vertuo{
     margin-top: 25px;
@@ -263,13 +282,22 @@ body {
     border-radius: 10px;
     overflow: hidden;
 }
+.machine .wrap .main .vertuo:hover img{
+    scale: 110%;
+    transition: all 0.2s linear;
+}
+.machine .wrap .main .vertuo:not(:hover) img{
+    scale: 100%;
+    transition: all 0.2s linear;
+}
 .machine .wrap .main .vertuo .txt{
     position: absolute;
     bottom: 5%;
     left: 5%;
     color: black;
+    z-index: 20;
 }
-.machine .wrap .main .vertuo .txt h4{font-size: 30px; margin-top: 3px;}
+.machine .wrap .main .vertuo .txt h4{font-size: 25px; margin-top: 3px;}
 .machine .wrap .main .vertuo .txt p{font-size: 22.9px; font-weight: lighter;}
 
 
@@ -287,22 +315,22 @@ body {
 .machine .wrap .select .txt .type .v_opn{opacity: 0.3;}
 .machine .wrap .select .txt .type img{width: 40px;}
 .machine .wrap .select .txt h4{
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
 }
 .machine .wrap .select .o{margin-top: 70px;}
 .machine .wrap .select .o .machine_o .swiper-wrapper{gap: 30px;}
 .machine .wrap .select .o .machine_o .swiper-wrapper .swiper-slide{text-align: center;}
-.machine .wrap .select .o .machine_o .swiper-wrapper .swiper-slide .tit{font-size: 25px; font-weight: bold; margin-top: 20px;}
-.machine .wrap .select .o .machine_o .swiper-wrapper .swiper-slide .price{font-size: 25px; margin-top: 5px;}
+.machine .wrap .select .o .machine_o .swiper-wrapper .swiper-slide .tit{font-size: 20px; font-weight: bold; margin-top: 20px;}
+.machine .wrap .select .o .machine_o .swiper-wrapper .swiper-slide .price{font-size: 20px; margin-top: 5px;}
 .machine .wrap .select .o .machine_o .swiper-wrapper .swiper-slide .con{font-size: 15px; margin-top: 10px; color: #868686;}
 
 
 .machine .wrap .select .v{display: none; margin-top: 70px;}
 .machine .wrap .select .v .machine_v .swiper-wrapper{gap: 30px;}
 .machine .wrap .select .v .machine_v .swiper-wrapper .swiper-slide{text-align: center;}
-.machine .wrap .select .v .machine_v .swiper-wrapper .swiper-slide .tit{font-size: 25px; font-weight: bold; margin-top: 20px;}
-.machine .wrap .select .v .machine_v .swiper-wrapper .swiper-slide .price{font-size: 25px; margin-top: 5px;}
+.machine .wrap .select .v .machine_v .swiper-wrapper .swiper-slide .tit{font-size: 20px; font-weight: bold; margin-top: 20px;}
+.machine .wrap .select .v .machine_v .swiper-wrapper .swiper-slide .price{font-size: 20px; margin-top: 5px;}
 .machine .wrap .select .v .machine_v .swiper-wrapper .swiper-slide .con{font-size: 15px; margin-top: 10px; color: #868686;}
 
 .swiper-slide img {
@@ -436,7 +464,7 @@ body {
     z-index: 20;
     padding: 20px 20px;
 }
-.etc .wrap .top a .txt h4{font-size: 30px;}
+.etc .wrap .top a .txt h4{font-size: 25px;}
 .etc .wrap .top a .txt p{margin-top: 3px; font-size: 18px; font-weight: lighter;}
 .etc .wrap .top .img::before{
     content: '';
@@ -465,7 +493,7 @@ body {
     padding: 20px 20px;
 }
 .etc .wrap .bottom .box:last-child a .txt{color: black;}
-.etc .wrap .bottom .box a .txt h4{font-size: 30px;}
+.etc .wrap .bottom .box a .txt h4{font-size: 25px;}
 .etc .wrap .bottom .box a .txt p{margin-top: 3px; font-size: 18px; font-weight: lighter;}
 .etc .wrap .bottom .box .img::before{
     content: '';
@@ -535,17 +563,17 @@ body {
 .service .wrap .container .box .text .txt{margin-top: 3px;}
 
 .sub_footer{background-color: #1a1a1a; width: 100%;}
-.sub_footer .wrap{width: 95%; margin: 0 auto; font-family: "Pretendard"; color: white;}
+.sub_footer .wrap{width: 80%; margin: 0 auto; font-family: "Pretendard"; color: white;}
 .sub_footer .wrap .top .logo{border-bottom: 1px solid white; padding: 30px; display: flex; justify-content: center;}
 .sub_footer .wrap .top .logo img{height: 30px;}
-.sub_footer .wrap .bottom{display: flex; flex-direction: column; gap: 15px; padding: 30px 0;}
-.sub_footer .wrap .bottom .con{display: flex; justify-content: space-between;}
+.sub_footer .wrap .bottom{display: flex; flex-direction: column; gap: 30px; padding: 60px 0;}
+.sub_footer .wrap .bottom .con{display: flex; justify-content: space-between;  gap: 20px;}
 .sub_footer .wrap .bottom .con .box{width: 100%;}
 .sub_footer .wrap .bottom .con .box h5{font-size: 20px;}
 .sub_footer .wrap .bottom .con .box p{font-size: 18px; font-weight: lighter; margin-top: 5px; color: #6a6a6a;}
 .sub_footer .wrap .bottom .con .box ul li{font-size: 18px; font-weight: lighter; margin-top: 5px; color: #6a6a6a;}
 .sub_footer .wrap .bottom .con .box ul li:hover a{border-bottom: 1px solid #6a6a6a;}
-.sub_footer .wrap .bottom .con .ask .all{display: flex; justify-content: space-between;} /*왜 space-between 안먹는지*/
+.sub_footer .wrap .bottom .con .ask .all{display: flex; justify-content: space-between; gap: 20px;}
 .sub_footer .wrap .bottom .con .box .all div{font-size: 17px; font-weight: lighter; margin-top: 5px; color: #6a6a6a;}
 .sub_footer .wrap .bottom .con .box .all div a:hover{border-bottom: 1px solid #6a6a6a;}
 /* 카드 */
@@ -562,14 +590,15 @@ body {
 /* 밑줄 */
 .sub_footer .wrap .bottom .con .box .line a{border-bottom: 1px solid #6a6a6a;}
 
+footer{background-color: #000;}
 footer .wrap{
-    background-color: #000;
-    width: 100%;
-    font-size: 18px;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 15px;
     font-family: "Pretendard";
     color: #6a6a6a;
     text-align: center;
-    padding: 30px 0;
+    padding: 60px 0;
 }
 footer .wrap .text ul{display: flex; justify-content: center; margin-bottom: 10px;}
 footer .wrap .text ul:first-child li:nth-child(2){color: white;}
