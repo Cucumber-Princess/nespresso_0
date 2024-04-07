@@ -105,7 +105,7 @@ header .wrap nav .menu li .btn button::after{
 header .wrap nav .menu li .btn button.on::after{
     background-image: url(../image/-_C.png); 
 }
-
+header .wrap nav .menu li .box{display: none;}
 header .wrap nav .menu li .box .con a{
     display: block;
     width: 100%;
