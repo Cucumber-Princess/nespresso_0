@@ -10,7 +10,14 @@ input{background-color: transparent; border: none;}
 
 #wrapper{min-width: 320px; background-color: white;}
 
-header{position: fixed; top: 0; left:0; width: 100%; z-index: 60;}
+@font-face {
+    font-family: 'Cafe24Shiningstar';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Shiningstar.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header{position: fixed; top: 0; left:0; width: 100%; z-index: 300;}
 header .wrap{
     width: 100%;
     height: 50px;
@@ -39,8 +46,7 @@ header .wrap nav{
     background-color: white;
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    display: block;
 }
 header .wrap nav .top{
     height: 60px;
@@ -75,17 +81,29 @@ header .wrap nav .menu li .btn button{
     border-bottom: 1px solid #ccc;
     color: #ccc;
     padding: 10px 10px;
-    background-image: url(../image/+_c.png);
-    background-size: 20px;
-    background-position: 99%;
     font-size: 15px;
     font-family: "Pretendard";
+    position: relative;
 }
-header .wrap nav .menu li .btn button.open{
-    background-image: url(../image/-_c.png);
-}
+
 header .wrap nav .menu li .btn button.on{
     color: #000;
+}
+
+header .wrap nav .menu li .btn button::after{
+    content: '';
+    background-image: url(../image/+_c.png);
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    top: 50%;
+    right: 10px;
+    z-index: 200;
+    transform: translateY(-50%);
+}
+header .wrap nav .menu li .btn button.on::after{
+    background-image: url(../image/-_C.png); 
 }
 
 header .wrap nav .menu li .box .con a{
@@ -102,7 +120,6 @@ header .wrap nav .menu li:nth-child(4){
 header .wrap nav .menu li:nth-child(4) .btn button{
     color: white;
     background-color: black;
-    background-image:  url(../image/+_W.png);
 }
 
 header .wrap nav .menu li:nth-child(4) .box .con a{
@@ -139,6 +156,7 @@ header .wrap nav .gnb .basket img{width: 40px;}
 
 .banner{
     width: 100%;
+    height: 60vh;
 }
 .banner video{
     object-fit: cover;
@@ -183,6 +201,7 @@ body {
 .menu .coffeeSlider .swiper-wrapper{
     transition-timing-function: linear;
     gap: 20px;
+    padding-top: 20px;
 }
 .menu .coffeeSlider .swiper-wrapper .swiper-slide:hover{
     scale: unset;
@@ -191,36 +210,26 @@ body {
 .menu .coffeeSlider .swiper-wrapper .swiper-slide:not(:hover){
     transition: unset;
 }
-.swiper .next{
-    z-index: 1;
-    position: absolute;
-    top: 50%;
-    right: 3%;
-    transform: translateY(-50%);
-}
-.swiper .next img{width: 100px;}
-.swiper .prev{
-    z-index: 1;
-    position: absolute;
-    top: 50%;
-    left: 3%;
-    transform: translateY(-50%);
-}
-.swiper .prev img{width: 100px;}
+.menu .coffeeSlider .swiper-wrapper .swiper-slide a{}
+
 /* 스와이퍼 폰트 설정 */
 .swiper .txt{
     font-family: "Pretendard";
     display: flex;
     justify-content: space-between;
-    margin: 0 20px;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 20px;
 }
-.swiper .txt h3{font-size: 20px;}
-.swiper .txt p{font-size: 20px;}
+.swiper .txt h3{font-size: 18px;}
+.swiper .txt p{font-size: 18px;}
 .swiper .only_b{
     font-family: "Pretendard";
-    font-size: 20px;
+    font-size: 18px;
     text-align: right;
-    margin: 0 20px;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 20px;
 }
 .menu {
     margin-top: 100px;
@@ -231,7 +240,7 @@ body {
 .menu .view a{
     display: block;
     margin: 0 auto;
-    width: 150px;
+    width: 120px;
     height: 40px;
     text-align: center;
     padding-top: 11px;
@@ -239,15 +248,19 @@ body {
     background-color: black;
     color: white;
     border-radius: 100px;
+    font-size: 13px;
+    transition: all 0.2s linear;
 }
-.menu .coffeeSlider .next{display: none;}
-.menu .coffeeSlider .prev{display: none;}
-
+.menu .view a:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
 
 #inside{width: 95%; margin: 0 auto;}
 
 .machine .wrap{margin-top: 150px; font-family: "Pretendard";}
-.machine .wrap h3{font-size: 20px;}
+.machine .wrap h3{font-size: 18px;}
 .machine .wrap .main{margin-top: 20px;}
 .machine .wrap .main .origin{
     width: 100%;
@@ -258,12 +271,12 @@ body {
     background-color: #000;
 }
 .machine .wrap .main .origin:hover img{
-    scale: unset;
-    transition: unset;
+    scale: 110%;
+    transition: all 0.2s linear;
 }
 .machine .wrap .main .origin:not(:hover) img{
-    scale: unset;
-    transition: unset;
+    scale: 100%;
+    transition: all 0.2s linear;
 }
 .machine .wrap .main .origin .txt{
     position: absolute;
@@ -272,8 +285,8 @@ body {
     color: white;
     z-index: 20;
 }
-.machine .wrap .main .origin .txt h4{font-size: 25px; margin-top: 3px;}
-.machine .wrap .main .origin .txt p{font-size: 22.9px; font-weight: lighter;}
+.machine .wrap .main .origin .txt h4{font-size: 18px; margin-top: 3px;}
+.machine .wrap .main .origin .txt p{font-size: 17px; font-weight: lighter;}
 .machine .wrap .main .vertuo{
     margin-top: 25px;
     width: 100%;
@@ -297,8 +310,8 @@ body {
     color: black;
     z-index: 20;
 }
-.machine .wrap .main .vertuo .txt h4{font-size: 25px; margin-top: 3px;}
-.machine .wrap .main .vertuo .txt p{font-size: 22.9px; font-weight: lighter;}
+.machine .wrap .main .vertuo .txt h4{font-size: 18px; margin-top: 3px;}
+.machine .wrap .main .vertuo .txt p{font-size: 17px; font-weight: lighter;}
 
 
 .machine .wrap .select{
@@ -315,22 +328,24 @@ body {
 .machine .wrap .select .txt .type .v_opn{opacity: 0.3;}
 .machine .wrap .select .txt .type img{width: 40px;}
 .machine .wrap .select .txt h4{
-    font-size: 25px;
+    font-size: 18px;
     text-align: center;
+    line-height: 25px;
+    margin-top: 10px;
 }
-.machine .wrap .select .o{margin-top: 70px;}
+.machine .wrap .select .o{margin-top: 50px;}
 .machine .wrap .select .o .machine_o .swiper-wrapper{gap: 30px;}
 .machine .wrap .select .o .machine_o .swiper-wrapper .swiper-slide{text-align: center;}
-.machine .wrap .select .o .machine_o .swiper-wrapper .swiper-slide .tit{font-size: 20px; font-weight: bold; margin-top: 20px;}
-.machine .wrap .select .o .machine_o .swiper-wrapper .swiper-slide .price{font-size: 20px; margin-top: 5px;}
+.machine .wrap .select .o .machine_o .swiper-wrapper .swiper-slide .tit{font-size: 18px; font-weight: bold; margin-top: 20px;}
+.machine .wrap .select .o .machine_o .swiper-wrapper .swiper-slide .price{font-size: 18px; margin-top: 5px;}
 .machine .wrap .select .o .machine_o .swiper-wrapper .swiper-slide .con{font-size: 15px; margin-top: 10px; color: #868686;}
 
 
-.machine .wrap .select .v{display: none; margin-top: 70px;}
+.machine .wrap .select .v{display: none; margin-top: 50px;}
 .machine .wrap .select .v .machine_v .swiper-wrapper{gap: 30px;}
 .machine .wrap .select .v .machine_v .swiper-wrapper .swiper-slide{text-align: center;}
-.machine .wrap .select .v .machine_v .swiper-wrapper .swiper-slide .tit{font-size: 20px; font-weight: bold; margin-top: 20px;}
-.machine .wrap .select .v .machine_v .swiper-wrapper .swiper-slide .price{font-size: 20px; margin-top: 5px;}
+.machine .wrap .select .v .machine_v .swiper-wrapper .swiper-slide .tit{font-size: 18px; font-weight: bold; margin-top: 20px;}
+.machine .wrap .select .v .machine_v .swiper-wrapper .swiper-slide .price{font-size: 18px; margin-top: 5px;}
 .machine .wrap .select .v .machine_v .swiper-wrapper .swiper-slide .con{font-size: 15px; margin-top: 10px; color: #868686;}
 
 .swiper-slide img {
@@ -341,7 +356,7 @@ body {
 }
 
 .event .wrap{margin-top: 150px; font-family: "Pretendard"; position: relative; padding-bottom: 20px; }
-.event .wrap h3{font-size: 20px;}
+.event .wrap h3{font-size: 18px;}
 .event .wrap .mySwiper{margin-top: 20px;}
 .event .wrap .mySwiper .swiper-wrapper .swiper-slide{
     position: relative;
@@ -361,8 +376,9 @@ body {
     padding: 10px 10px;
 }
 .event .wrap .mySwiper .swiper-wrapper .swiper-slide .txt .title{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
+    white-space: nowrap;
 }
 .event .wrap .mySwiper .swiper-wrapper .swiper-slide .txt .con{
     font-size: 15px;
@@ -405,8 +421,8 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 120px;
-    background: linear-gradient(to top, #000000af, #00000000 100%)
+    height: 300px;
+    background: linear-gradient(to top, #000000e1, #00000000 100%)
 }
 .event .wrap .mySwiper .swiper-wrapper .swiper-slide:first-child .img{
     width: 100%;
@@ -415,6 +431,9 @@ body {
 .event .wrap .mySwiper .swiper-wrapper .swiper-slide:first-child a .img img{
     display: block;
     object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center center;
 }
 .event .wrap .mySwiper .swiper-wrapper .swiper-slide:first-child .go_btn{
     z-index: 10;
@@ -447,7 +466,7 @@ body {
     margin-top: 150px;
     font-family: "Pretendard";
 }
-.etc .wrap h3{font-size: 20px;}
+.etc .wrap h3{font-size: 18px;}
 .etc .wrap .top{
     width: 100%;
     height: 500px;
@@ -464,9 +483,9 @@ body {
     z-index: 20;
     padding: 20px 20px;
 }
-.etc .wrap .top a .txt h4{font-size: 25px;}
-.etc .wrap .top a .txt p{margin-top: 3px; font-size: 18px; font-weight: lighter;}
-.etc .wrap .top .img::before{
+.etc .wrap .top a .txt h4{font-size: 18px;}
+.etc .wrap .top a .txt p{margin-top: 3px; font-size: 17px; font-weight: lighter;}
+.etc .wrap .top a .img::before{
     content: '';
     position: absolute;
     bottom: 0;
@@ -475,8 +494,9 @@ body {
     height: 120px;
     background: linear-gradient(to top, #000000af, #00000000 100%)
 }
-.etc .wrap .top .img{width: 100%; height: 100%;}
-.etc .wrap .top video{object-fit: cover; object-position: -300px -10px;}
+.etc .wrap .top a .img{width: 100%; height: 100%;}
+.etc .wrap .top a .img video{width: 100%; height: 100%; object-fit: cover; scale: 100%; transition: all 0.2s linear;}
+.etc .wrap .top a .img video:hover{scale: 110%;}
 .etc .wrap .bottom .box{
     width: 100%;
     overflow: hidden;
@@ -493,8 +513,10 @@ body {
     padding: 20px 20px;
 }
 .etc .wrap .bottom .box:last-child a .txt{color: black;}
-.etc .wrap .bottom .box a .txt h4{font-size: 25px;}
-.etc .wrap .bottom .box a .txt p{margin-top: 3px; font-size: 18px; font-weight: lighter;}
+.etc .wrap .bottom .box a .txt h4{font-size: 18px;}
+.etc .wrap .bottom .box a .txt p{margin-top: 3px; font-size: 17px; font-weight: lighter;}
+.etc .wrap .bottom .box .img{scale: 100%; transition: all 0.2s linear;}
+.etc .wrap .bottom .box .img:hover{scale: 110%;}
 .etc .wrap .bottom .box .img::before{
     content: '';
     position: absolute;
@@ -551,6 +573,7 @@ body {
     background-image: url(../image/sarrow_s_B.png);
     background-size: 45px;
     background-position: 98% 90%;
+    transition: all 0.2s linear;
 }
 .service .wrap .container .box a:hover{
     background-image: url(../image/arrow_s_W.png);
@@ -559,8 +582,8 @@ body {
     padding-right: 30px;
 }
 .service .wrap .container .box .text{display: flex; flex-direction: column; justify-content: center;}
-.service .wrap .container .box .text .tit{font-size: 20px; font-weight: bold;}
-.service .wrap .container .box .text .txt{margin-top: 3px;}
+.service .wrap .container .box .text .tit{font-size: 18px; font-weight: bold;}
+.service .wrap .container .box .text .txt{margin-top: 5px;}
 
 .sub_footer{background-color: #1a1a1a; width: 100%;}
 .sub_footer .wrap{width: 80%; margin: 0 auto; font-family: "Pretendard"; color: white;}
@@ -600,7 +623,7 @@ footer .wrap{
     text-align: center;
     padding: 60px 0;
 }
-footer .wrap .text ul{display: flex; justify-content: center; margin-bottom: 10px; white-space: nowrap;}
+footer .wrap .text ul{display: flex; justify-content: center; margin-bottom: 10px;}
 footer .wrap .text ul:first-child li:nth-child(2){color: white;}
 footer .wrap .text ul li::after{
     content: '|';

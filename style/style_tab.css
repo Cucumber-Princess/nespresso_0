@@ -5,6 +5,10 @@
 
     #inside{width: 80%; margin: 0 auto;}
 
+    .banner{
+        height: unset;
+    }
+
     .machine .wrap{margin-top: 150px; font-family: "Pretendard";}
     .machine .wrap h3{font-size: 20px;}
     .machine .wrap .main{margin-top: 20px; display: flex; gap: 25px;}
@@ -59,8 +63,8 @@
         flex-direction: column;
         justify-content: center;
     }
-    .service .wrap .container .box .text .tit{font-size: 20px; font-weight: bold;}
-    .service .wrap .container .box .text .txt{margin-top: 3px; font-size: 18px;}
+    .service .wrap .container .box .text .tit{font-size: 18px; font-weight: bold;}
+    .service .wrap .container .box .text .txt{margin-top: 10px; font-size: 14px;}
 
     
 }
